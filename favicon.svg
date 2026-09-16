@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    :root { color: #b11f4b; }
+    @media (prefers-color-scheme: dark) { :root { color: #fd8ea1; } }
+  </style>
+  <rect width="64" height="64" rx="12" fill="currentColor"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M14 25c0-9 7-15 18-15s18 6 18 15v16c0 8-6 13-15 13h-6c-9 0-15-5-15-13V25Z"/>
+    <path d="M21 28c3-2 6-3 11-3s8 1 11 3"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="24" cy="36" r="3"/>
+    <circle cx="40" cy="36" r="3"/>
+  </g>
+</svg>
