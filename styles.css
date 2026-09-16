@@ -91,8 +91,6 @@ svg {
 .site-header,
 .mobile-menu,
 .hero,
-.series-overview,
-.session-finder,
 .sessions,
 .register-section,
 .site-footer {
@@ -272,18 +270,6 @@ svg {
   box-shadow: var(--cp-shadow);
 }
 
-.text-link {
-  color: var(--cp-text);
-  font-weight: 700;
-  text-decoration-color: var(--cp-border-strong);
-  text-underline-offset: 0.25rem;
-}
-
-.text-link:hover {
-  color: var(--cp-accent);
-  text-decoration-color: var(--cp-accent);
-}
-
 .series-facts {
   display: flex;
   gap: 2rem;
@@ -460,12 +446,6 @@ svg {
   color: var(--cp-accent);
 }
 
-.series-overview {
-  padding-block: 7rem;
-  border-top: 1px solid var(--cp-border);
-  border-bottom: 1px solid var(--cp-border);
-}
-
 .section-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
@@ -474,7 +454,6 @@ svg {
 }
 
 .section-heading h2,
-.session-finder h2,
 .register-command h2 {
   max-width: 16ch;
   margin: 0;
@@ -485,7 +464,6 @@ svg {
 }
 
 .section-heading > p,
-.session-finder > div > p,
 .register-command p {
   max-width: var(--cp-reading-width);
   margin: 0;
@@ -493,97 +471,8 @@ svg {
   font-size: 1.08rem;
 }
 
-.lifecycle {
-  display: grid;
-  grid-template-columns: repeat(11, auto);
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 5rem;
-  padding: 1.2rem;
-  border: 1px solid var(--cp-border);
-  border-radius: var(--cp-radius);
-  background: var(--cp-surface);
-  box-shadow: var(--cp-card-shadow);
-}
-
-.lifecycle span {
-  font-weight: 750;
-}
-
-.lifecycle svg {
-  width: 1.5rem;
-  fill: none;
-  stroke: var(--cp-border-strong);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.overview-note {
-  max-width: var(--cp-reading-width);
-  margin: 2rem 0 0;
-  color: var(--cp-text-muted);
-}
-
-.session-finder {
-  display: grid;
-  grid-template-columns: 0.72fr 1.28fr;
-  gap: 4rem;
-  padding-block: 7rem 4rem;
-}
-
-.session-finder h2 {
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
-}
-
-.session-finder > div > p {
-  margin-top: 1rem;
-}
-
-.role-switcher {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.65rem;
-}
-
-.role-switcher button {
-  min-height: 4rem;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--cp-border);
-  border-radius: var(--cp-radius);
-  background: var(--cp-surface);
-  color: var(--cp-text);
-  font-weight: 700;
-  text-align: left;
-  cursor: pointer;
-}
-
-.role-switcher button:hover {
-  border-color: var(--cp-border-strong);
-  background: var(--cp-surface-soft);
-}
-
-.role-switcher button[aria-pressed="true"] {
-  border-color: var(--cp-accent);
-  background: var(--cp-accent-soft);
-  color: var(--cp-accent);
-}
-
-.finder-result {
-  grid-column: 2;
-  margin: -2.5rem 0 0;
-  color: var(--cp-text-muted);
-  font-size: 0.88rem;
-}
-
-.finder-result a {
-  color: var(--cp-accent);
-  font-weight: 750;
-  text-underline-offset: 0.2rem;
-}
-
 .sessions {
-  padding-block: 4rem 8rem;
+  padding-block: 7rem 8rem;
 }
 
 .sessions-heading {
@@ -599,30 +488,6 @@ svg {
 
 .session + .session {
   margin-top: 2rem;
-}
-
-.session.is-muted {
-  opacity: 0.7;
-  transform: scale(0.985);
-}
-
-.session.is-recommended .session-main {
-  border-color: var(--cp-accent);
-  box-shadow: 0 0 0 1px var(--cp-accent);
-}
-
-.session.is-recommended .session-main::before {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 2;
-  padding: 0.25rem 0.5rem;
-  border-radius: 999px;
-  background: var(--cp-accent);
-  color: var(--cp-accent-fg);
-  content: "Recommended";
-  font-size: 0.68rem;
-  font-weight: 800;
 }
 
 .session-rail {
@@ -934,18 +799,12 @@ svg {
     transform: translateY(-0.3rem);
   }
 
-  .section-heading,
-  .session-finder {
+  .section-heading {
     grid-template-columns: 1fr;
   }
 
   .section-heading h2 {
     max-width: 18ch;
-  }
-
-  .finder-result {
-    grid-column: 1;
-    margin: 0;
   }
 
   .session-body {
@@ -1033,54 +892,8 @@ svg {
   .node-2 { top: 33%; }
   .node-3 { top: 66%; }
 
-  .series-overview,
-  .session-finder,
   .sessions {
     padding-block: 5rem;
-  }
-
-  .lifecycle {
-    position: relative;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 1.25rem 1.25rem 1.25rem 3rem;
-  }
-
-  .lifecycle::before {
-    position: absolute;
-    top: 2rem;
-    bottom: 2rem;
-    left: 1.55rem;
-    width: 1px;
-    background: var(--cp-border-strong);
-    content: "";
-  }
-
-  .lifecycle span {
-    position: relative;
-    padding-block: 0.65rem;
-  }
-
-  .lifecycle span::before {
-    position: absolute;
-    top: 50%;
-    left: -1.82rem;
-    width: 0.55rem;
-    height: 0.55rem;
-    border: 2px solid var(--cp-surface);
-    border-radius: 50%;
-    background: var(--cp-accent);
-    box-shadow: 0 0 0 1px var(--cp-accent);
-    content: "";
-    transform: translateY(-50%);
-  }
-
-  .lifecycle svg {
-    display: none;
-  }
-
-  .role-switcher {
-    grid-template-columns: 1fr;
   }
 
   .session {
@@ -1144,8 +957,6 @@ svg {
   .site-header,
   .mobile-menu,
   .hero,
-  .series-overview,
-  .session-finder,
   .sessions,
   .register-section,
   .site-footer {
@@ -1155,10 +966,6 @@ svg {
   .hero-actions,
   .hero-actions .button {
     width: 100%;
-  }
-
-  .hero-actions .text-link {
-    margin-inline: auto;
   }
 
   .session-register > div {

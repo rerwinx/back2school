@@ -127,7 +127,7 @@ components:
 
 The visual world presents the series as one progressive workflow rather than an event-card stack. An editorial promise leads into contribution-graph rails, terminal framing, and linked session surfaces so visitors can understand progression, find the right starting point, and register without leaving the journey metaphor.
 
-The system is professional, technical, and quiet. Warm page tones and GitHub-like controls provide credibility; the rose signal marks dates, graph nodes, recommendations, focus, and primary action. The first viewport pairs large editorial copy with a four-node graph, and the same connected structure continues through the lifecycle map and weekly curriculum.
+The system is professional, technical, and quiet. Warm page tones and GitHub-like controls provide credibility; the rose signal marks dates, graph nodes, focus, and primary action. The first viewport pairs large editorial copy with a four-node graph, and the same connected structure continues through the weekly curriculum.
 
 **Key Characteristics:**
 - Connected graph and rail structures express sequence.
@@ -141,12 +141,12 @@ The system is professional, technical, and quiet. Warm page tones and GitHub-lik
 The palette combines warm neutrals with a single rose accent. Light mode is paper-like; dark mode uses warm charcoal rather than pure black. Theme variables switch through `data-theme`, initialized from the `scoutTheme` query parameter or the system color-scheme preference.
 
 ### Primary
-- **Rose Signal:** Used for graph nodes, dates, primary buttons, selected controls, recommendation borders, focus outlines, prompts, and key-takeaway emphasis.
+- **Rose Signal:** Used for graph nodes, dates, primary buttons, focus outlines, prompts, and key-takeaway emphasis.
 - **Soft Rose Signal:** Used only as the background for selected or hovered workflow controls.
 
 ### Neutral
 - **Warm Page and Elevated Canvas:** Separate the site background from reading and workflow regions without introducing competing hues.
-- **White or Charcoal Surfaces:** Hold graph, session, navigation, lifecycle, and registration containers.
+- **White or Charcoal Surfaces:** Hold graph, session, navigation, and registration containers.
 - **Quiet Borders:** Define structure at rest; the stronger border is reserved for controls, rails, and emphasis.
 - **Primary, Soft, and Muted Text:** Maintain a clear editorial hierarchy while keeping secondary metadata subdued.
 - **Live Green:** Appears only in the graph status indicator.
@@ -176,9 +176,9 @@ The palette combines warm neutrals with a single rose accent. Light mode is pape
 
 The page uses a centered fluid container capped at 76rem, with a 1rem outer gutter that tightens to 0.625rem below 430px. Desktop sections use generous 7rem vertical rhythm and asymmetric grids: editorial copy beside the graph, explanation beside controls, and story beside learning details.
 
-The workflow is spatially connected. The hero graph uses four staggered cards beside a vertical contribution rail; the lifecycle is a horizontal sequence; weekly sessions share a continuous rail and week markers. Session interiors divide narrative and structured learning content rather than repeating generic cards.
+The workflow is spatially connected. The hero graph uses four staggered cards beside a vertical contribution rail; weekly sessions share a continuous rail and week markers. Session interiors divide narrative and structured learning content rather than repeating generic cards.
 
-At 960px, primary grids collapse to one column and session interiors stack. At 720px, navigation becomes an expandable menu, the graph becomes a single vertical track, the lifecycle becomes a vertical node sequence, role controls stack, session rails simplify to labels, and registration layouts wrap. At 430px, primary actions and registration choices become full-width stacks.
+At 960px, primary grids collapse to one column and session interiors stack. At 720px, navigation becomes an expandable menu, the graph becomes a single vertical track, session rails simplify to labels, and registration layouts wrap. At 430px, primary actions and registration choices become full-width stacks.
 
 The fixed background grid uses 4rem cells and fades out within the upper page. It supports the developer-workflow atmosphere without competing with content.
 
@@ -210,11 +210,6 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - Hover introduces only a soft surface and stronger text.
 - Below 720px, navigation becomes a bordered menu button and an independent surface menu. `aria-expanded` and the native `hidden` attribute are the state contract; choosing a link closes the menu.
 
-### Role Switcher
-- Role choices are two-column bordered controls on desktop and a single column on mobile.
-- The selected control uses `aria-pressed="true"`, a rose border, soft rose fill, and rose text.
-- Recommendations add a rose outline and pill label to matching sessions; non-matches remain visible but mute to 70% opacity and scale slightly down. The live result text updates through an `aria-live="polite"` region.
-
 ### Workflow Graph
 - The signature graph is a terminal-framed surface with a toolbar, four-node rail, staggered linked steps, and a command footer.
 - Step hover uses a rose border, soft rose background, and a small upward shift.
@@ -225,8 +220,8 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - Headers pair date/title with a quiet audience panel. Bodies divide narrative, takeaway, and structured learning details. Registration controls remain attached as the final workflow row.
 
 ### Motion
-- Standard control transitions run for 160ms; recommendation filtering uses 250–350ms; signature graph movement uses 500ms with `cubic-bezier(0.16, 1, 0.3, 1)`.
-- Motion is limited to small translation, scale, opacity, shadow, border, and background changes. It communicates hover, recommendation, and elevation state rather than providing ambient spectacle.
+- Standard control transitions run for 160ms; signature graph movement uses 500ms with `cubic-bezier(0.16, 1, 0.3, 1)`.
+- Motion is limited to small translation, scale, opacity, shadow, border, and background changes. It communicates hover and elevation state rather than providing ambient spectacle.
 - Under `prefers-reduced-motion: reduce`, smooth scrolling is disabled and transitions collapse to 0.01ms.
 
 ## Do's and Don'ts
@@ -237,11 +232,10 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - **Do** use terminal details selectively for filenames, commands, dates, weeks, and times.
 - **Do** preserve explicit 10:00 and 16:00 BST registration choices.
 - **Do** retain semantic landmarks, keyboard-operable controls, skip navigation, visible focus, live announcements, sufficient contrast, and reduced-motion behavior.
-- **Do** keep muted content legible; recommendation filtering must never hide non-matching sessions.
 
 ### Don't:
 - **Don't** turn the page into a stack or grid of interchangeable event cards.
 - **Don't** use rose as a large background field or introduce competing accent colors.
 - **Don't** replace the quiet controls with glossy gradients, glass effects, heavy glows, or oversized pill buttons.
 - **Don't** use motion that changes layout unexpectedly or makes access to session and registration content conditional.
-- **Don't** communicate selection, recommendation, or navigation state by color alone; preserve text, outlines, labels, and ARIA state.
+- **Don't** communicate selection or navigation state by color alone; preserve text, outlines, labels, and ARIA state.
