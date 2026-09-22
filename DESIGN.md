@@ -178,7 +178,7 @@ The page uses a centered fluid container capped at 76rem, with a 1rem outer gutt
 
 The workflow is spatially connected. The hero graph uses four staggered cards beside a vertical contribution rail; weekly sessions share a continuous rail and week markers. Session interiors divide narrative and structured learning content rather than repeating generic cards.
 
-At 960px, primary grids collapse to one column and session interiors stack. At 720px, navigation becomes an expandable menu, the graph becomes a single vertical track, session rails simplify to labels, and registration layouts wrap. At 430px, primary actions and registration choices become full-width stacks.
+At 960px, primary grids collapse to one column and session interiors stack. At 720px, navigation becomes an expandable menu, the graph becomes a single vertical track, session rails simplify to labels, and session-action layouts wrap. At 430px, primary actions and session choices become full-width stacks.
 
 The fixed background grid uses 4rem cells and fades out within the upper page. It supports the developer-workflow atmosphere without competing with content.
 
@@ -202,7 +202,7 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - **Primary button:** Rose fill, high-contrast foreground, compact control radius, strong label weight, and a minimum 3rem touch height.
 - **Hover:** Darkens slightly, rises 2px, and gains the larger ambient shadow.
 - **Text link:** Uses normal text color with a quiet underline, becoming rose on hover.
-- **Registration link:** A bordered terminal-style control containing time, a sans-serif rose action label, and an external-arrow cue.
+- **Session-action link:** A bordered terminal-style control containing either a registration time and action label or a completed session's recording action, plus an external-arrow cue.
 - **Focus:** Every interactive element uses a visible 3px rose outline with a 3px offset.
 
 ### Navigation
@@ -230,7 +230,7 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - **Do** show curriculum as a connected contribution graph, workflow map, or rail.
 - **Do** keep the first viewport focused on an editorial promise beside the four-node series graph.
 - **Do** use terminal details selectively for filenames, commands, dates, weeks, and times.
-- **Do** preserve explicit 10:00 and 16:00 BST registration choices.
+- **Do** preserve explicit 10:00 and 16:00 BST choices for upcoming sessions and use one clear recording action for completed sessions.
 - **Do** retain semantic landmarks, keyboard-operable controls, skip navigation, visible focus, live announcements, sufficient contrast, and reduced-motion behavior.
 
 ### Don't:

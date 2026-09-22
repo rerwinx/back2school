@@ -10,9 +10,9 @@ python3 -m http.server 8000
 
 Open <http://localhost:8000>.
 
-## Update registration links
+## Update session links
 
-The eight registration URLs are plain `href` values in `index.html`, grouped under each session. Replace those values with the final `gh.io` short links when they are available.
+Session links are plain `href` values in `index.html`. Completed sessions can replace their two registration choices with a single recording link; upcoming sessions retain their 10:00 and 16:00 BST registration links.
 
 ## Publish with GitHub Pages
 

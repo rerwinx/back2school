@@ -41,7 +41,7 @@ Visitors may arrive from a shared link, review the page independently or with an
 ## Evidence on Hand
 
 - Source PDF: `/Users/rerwinx/.copilot/workspaces/bd663e27-fba7-4a90-9543-8bbb4d1ef1ba/attachments/d3322ce9-2c36-4cc3-9c42-71cb8a9721b3-GitHub Copilot Back to School Series (1).pdf`
-- Four complete session descriptions, audiences, learning topics, reasons to attend, takeaways, dates, times, and eight Microsoft Teams registration links.
+- Four complete session descriptions, audiences, learning topics, reasons to attend, takeaways, and dates. Completed sessions may link to recordings; upcoming sessions provide two Microsoft Teams registration links.
 - No speaker biographies, event imagery, testimonials, or attendance figures were supplied.
 
 ## Product Principles
