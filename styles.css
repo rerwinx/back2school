@@ -120,18 +120,9 @@ svg {
 }
 
 .brand-mark {
-  width: 2rem;
-  height: 2rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.75;
-}
-
-.brand-mark circle {
-  fill: currentColor;
-  stroke: none;
+  width: 2.4rem;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .primary-nav {
@@ -354,7 +345,7 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem 3.5rem;
-  min-height: 29rem;
+  min-height: 39rem;
   padding: 2.5rem 2rem 2.5rem 4rem;
 }
 
@@ -387,9 +378,10 @@ svg {
 }
 
 .node-1 { top: 0; }
-.node-2 { top: 34%; }
-.node-3 { top: 66%; }
-.node-4 { bottom: 0; }
+.node-2 { top: 25%; }
+.node-3 { top: 50%; }
+.node-4 { top: 75%; }
+.node-5 { bottom: 0; }
 
 .graph-step {
   display: flex;
@@ -710,6 +702,15 @@ svg {
   content: "↗";
 }
 
+.register-link-disabled {
+  color: var(--cp-text-muted);
+  cursor: not-allowed;
+}
+
+.register-link-disabled::after {
+  content: none;
+}
+
 .register-section {
   padding-block: 0 8rem;
 }
@@ -889,8 +890,9 @@ svg {
     transform: none;
   }
 
-  .node-2 { top: 33%; }
-  .node-3 { top: 66%; }
+  .node-2 { top: 25%; }
+  .node-3 { top: 50%; }
+  .node-4 { top: 75%; }
 
   .sessions {
     padding-block: 5rem;
