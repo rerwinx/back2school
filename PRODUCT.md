@@ -22,7 +22,7 @@ The site presents the series as a practical, demo-focused learning journey from 
 
 ## Operating Context
 
-Visitors may arrive from a shared link, review the page independently or with an engineering team, compare four consecutive Wednesday sessions, and register for either a 10:00 BST or 16:00 BST event.
+Visitors may arrive from a shared link, review the page independently or with an engineering team, compare four consecutive Wednesday sessions, and register for either a 10:00 BST or 16:00 BST series event. The November 11 Universe recap is offered at 10:00 GMT and 16:00 GMT.
 
 ## Capabilities and Constraints
 

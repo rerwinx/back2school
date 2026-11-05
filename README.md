@@ -12,7 +12,7 @@ Open <http://localhost:8000>.
 
 ## Update session links
 
-Session links are plain `href` values in `index.html`. Completed sessions can replace their two registration choices with a single recording link; upcoming sessions retain their 10:00 and 16:00 BST registration links.
+Session links are plain `href` values in `index.html`. Completed sessions can replace their two registration choices with a single recording link. The series sessions use 10:00 and 16:00 BST; the November 11 Universe recap uses 10:00 and 16:00 GMT.
 
 ## Publish with GitHub Pages
 
