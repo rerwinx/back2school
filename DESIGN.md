@@ -230,7 +230,7 @@ The hero graph may carry a slight 1.2-degree rotation on wide screens to disting
 - **Do** show curriculum as a connected contribution graph, workflow map, or rail.
 - **Do** keep the first viewport focused on an editorial promise beside the four-node series graph.
 - **Do** use terminal details selectively for filenames, commands, dates, weeks, and times.
-- **Do** preserve explicit 10:00 and 16:00 BST choices for upcoming sessions and use one clear recording action for completed sessions.
+- **Do** preserve explicit 10:00 and 16:00 BST choices for the series sessions, use GMT for the November 11 Universe recap, and use one clear recording action for completed sessions.
 - **Do** retain semantic landmarks, keyboard-operable controls, skip navigation, visible focus, live announcements, sufficient contrast, and reduced-motion behavior.
 
 ### Don't:
